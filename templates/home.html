@@ -1,0 +1,124 @@
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="/static/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		
+		
+		
+	</div>
+	</header>
+
+	<!-- <div class="ml-container">
+
+		<form action="/analyze_text" method="POST">
+		<p>Enter Your text Here</p>
+		<input type="text" name="comment"/>
+		<textarea name="rawtext" rows="10" cols="50"></textarea>
+		<br/>
+
+		<input type="submit" class="btn-info" value="summarize">
+		</form>
+		<br/>
+		{{ spacy_summary }}
+		
+	</div> -->
+
+    
+	<!-- <div class="ml-container">
+        <form action="/analyze" method="POST">
+        <p>Click on the "Choose File" button to upload a file:</p>
+        <input type="file" id="myFile" name="filename">
+        <br/>
+		<input type="submit">
+		
+		<br/>
+		</form>
+		{{ spacy_summary_2 }}
+    
+	</div> -->
+
+
+	<!-- <div class="ml-container">
+        <form action="/analyze_url" method="POST">
+        <label for="homepage">Add your web address:</label>
+        <input type="url" id="homepage" name="homepage"><br><br>
+		<br/>
+		<input type="submit">
+		
+		<br/>
+		</form>
+		{{ spacy_summary_3 }}
+		
+	</div> -->
+
+	<div class="custom-head">
+		Summarization of Medical Records
+	</div>
+	<div class="login row">
+
+		<div class="col-lg-6 col-md-6">
+			<p> Enter text to summarize </p>
+			<form action="/analyze_text" method="POST">
+				<p>
+				<!-- <input type="text" name="rawtext" value="" placeholder="Paste your text here"> -->
+				<textarea name="rawtext" rows="10" cols="50"  placeholder="Paste your text here"></textarea>
+				</p>
+			<p><input type="submit" class="btn-info" value="Summarize"></p>
+			<br/>
+			</form>
+			<br/>
+		
+
+		<!-- <h1>Text Summarization</h1> -->
+			<form action="/analyze" method="POST">
+				<p><label for="myfile">Select a file:</label></p>
+				<p><input type="file" id="myfile" name="filename"></p>
+				<p><input type="submit" value="Summarize"></p>
+			<br/>
+			</form>
+			<br/>
+			
+
+			<form action="/action_page.php">
+				<label for="homepage">Paste your URL:</label>
+				<input type="url" id="homepage" name="raw_url">
+				<input type="submit" value="Sumarize">
+			<br/>
+			</form>
+			<br/>
+			
+		</div>
+		<div class="col-lg-6 col-md-6 result">
+			{{ spacy_summary }}
+			{{ spacy_summary_2 }}
+			{{ spacy_summary_3 }}
+		</div>
+	</div>
+		  
+		  <!-- <p class="remember_me">
+			<label>
+			  <input type="checkbox" name="remember_me" id="remember_me">
+			  Remember me on this computer
+			</label>
+		  </p>
+		  <p class="submit"><input type="submit" name="commit" value="Login"></p>
+		</form>
+	  </div>
+	  
+	  <div class="login-help">
+		<p>Forgot your password? <a href="#">Click here to reset it</a>.</p>
+	  </div>
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script> -->
+
+</body>
+</html>
